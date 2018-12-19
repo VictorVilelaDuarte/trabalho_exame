@@ -4,37 +4,46 @@
   <artifactId>trabalho_exame</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.0.5.RELEASE</version>
+    </parent>
+  
   <dependencies>
   	
-  	<dependency>
+  	 <dependency>
     	<groupId>junit</groupId>
     	<artifactId>junit</artifactId>
-    	<version>4.12</version>
     	<scope>test</scope>
-	</dependency>
+	 </dependency>
   	
-  	<dependency>
-    	<groupId>org.springframework.boot</groupId>
-    	<artifactId>spring-boot</artifactId>
-    	<version>2.1.1.RELEASE</version>
-	</dependency>
-	
-	<dependency>
-    	<groupId>org.liquibase</groupId>
-    	<artifactId>liquibase-core</artifactId>
-    	<version>3.5.3</version>
-	</dependency>
+  	 <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-web</artifactId>
+     </dependency>
 
-	<dependency>
-    	<groupId>org.springframework.data</groupId>
-    	<artifactId>spring-data-jpa</artifactId>
-    	<version>2.1.2.RELEASE</version>
-	</dependency>
+     <dependency>
+         <groupId>org.springframework.boot</groupId>
+         <artifactId>spring-boot-starter-data-jpa</artifactId>
+     </dependency>
+
+     <dependency>
+         <groupId>mysql</groupId>
+         <artifactId>mysql-connector-java</artifactId>
+     </dependency>
+
+     <dependency>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-test</artifactId>
+     	<scope>test</scope>
+     </dependency>
+	
 	
 	<dependency>
     	<groupId>org.hibernate</groupId>
     	<artifactId>hibernate-core</artifactId>
-    	<version>5.3.6.Final</version>
 	</dependency>	
 	
   </dependencies>
