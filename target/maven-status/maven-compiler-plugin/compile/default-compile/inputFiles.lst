@@ -1,4 +1,14 @@
 /home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/Paciente.java
-/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/PacienteController.java
 /home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/Application.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/ConsultaRepository.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/Receita.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/ConsultaController.java
 /home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/PacienteRepository.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/MedicoController.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/MedicoRepository.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/PacienteController.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/ResourceNotFoundException.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/ReceitaController.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/Consulta.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/Medico.java
+/home/victor/eclipse-workspace/trabalho_exame/src/main/java/trabalho_exame/ReceitaRepository.java

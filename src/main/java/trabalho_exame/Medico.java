@@ -1,7 +1,6 @@
 package trabalho_exame;
 
 import java.sql.Date;
-
 import javax.persistence.Column;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -9,12 +8,10 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.Table;
 
-
 @Entity
-@Table(name = "paciente")
-public class Paciente {
-	
-	 @Id
+@Table(name = "medico")
+public class Medico {
+	@Id
 	 @GeneratedValue(strategy=GenerationType.AUTO)
 	 @Column
 	 private Integer id;
@@ -27,17 +24,13 @@ public class Paciente {
 	 @Column
 	 private char sexo;
 	 @Column
-	 private float peso;
-	 @Column
-	 private float altura;
-	 @Column
-	 private String endereco;
+	 private String especialidade;
 	 @Column
 	 private String email;
 	 @Column
 	 private String celular;
 	 @Column
-	 private String convenio;
+	 private String endereco;
 	 @Column
 	 private String obs;
 	 
@@ -53,10 +46,10 @@ public class Paciente {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getCpf() {
+	public String getCPF() {
 		return CPF;
 	}
-	public void setCpf(String CPF) {
+	public void setCPF(String CPF) {
 		this.CPF = CPF;
 	}
 	public Date getDtnasc() {
@@ -71,23 +64,11 @@ public class Paciente {
 	public void setSexo(char sexo) {
 		this.sexo = sexo;
 	}
-	public float getPeso() {
-		return peso;
+	public String getEspecialidade() {
+		return especialidade;
 	}
-	public void setPeso(float peso) {
-		this.peso = peso;
-	}
-	public float getAltura() {
-		return altura;
-	}
-	public void setAltura(float altura) {
-		this.altura = altura;
-	}
-	public String getEndereco() {
-		return endereco;
-	}
-	public void setEndereco(String endereco) {
-		this.endereco = endereco;
+	public void setEspecialidade(String especialidade) {
+		this.especialidade = especialidade;
 	}
 	public String getEmail() {
 		return email;
@@ -101,11 +82,11 @@ public class Paciente {
 	public void setCelular(String celular) {
 		this.celular = celular;
 	}
-	public String getConvenio() {
-		return convenio;
+	public String getEndereco() {
+		return endereco;
 	}
-	public void setConvenio(String convenio) {
-		this.convenio = convenio;
+	public void setEndereco(String endereco) {
+		this.endereco = endereco;
 	}
 	public String getObs() {
 		return obs;
