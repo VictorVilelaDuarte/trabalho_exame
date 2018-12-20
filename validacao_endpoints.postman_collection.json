@@ -1,0 +1,259 @@
+{
+	"variables": [],
+	"info": {
+		"name": "validacao_endpoints",
+		"_postman_id": "eab1258c-1db3-1834-c59a-ad4a42922cd8",
+		"description": "",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Adiciona Paciente",
+			"request": {
+				"url": "http://localhost:8080/paciente/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Carol\",\n\t\"cpf\":\"26183665267\",\n\t\"dtnasc\":\"1998-10-22\",\n\t\"sexo\":\"f\",\n\t\"peso\":\"53.8\",\n\t\"altura\":\"1.53\",\n\t\"endereco\":\"Re. Uniao, SJC\",\n\t\"email\":\"carol@caroline.com\",\n\t\"celular\":\"975382943\",\n\t\"convenio\":\"Unimed\",\n\t\"obs\":\"Paciente saudavel\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Altera Paciente",
+			"request": {
+				"url": "http://localhost:8080/paciente/altera/3",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Carolzinha\",\n\t\"cpf\":\"74926482650\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Paciente",
+			"request": {
+				"url": "http://localhost:8080/paciente/del/3",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Recupera Pacientes",
+			"request": {
+				"url": "http://localhost:8080/paciente/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona Medico",
+			"request": {
+				"url": "http://localhost:8080/medico/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\":\"Tommy\",\n\t\"cpf\":\"62916339903\",\n\t\"dtnasc\":\"1938-10-13\",\n\t\"sexo\":\"m\",\n\t\"endereco\":\"Vila Industrial, SJC\",\n\t\"email\":\"tommy@medico.com\",\n\t\"celular\":\"923448264\",\n\t\"especialidade\":\"Otorrino\",\n\t\"obs\":\"Medico muito bom\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Altera Medico",
+			"request": {
+				"url": "http://localhost:8080/medico/altera/5",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"nome\": \"Tommy Vilela\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Medico",
+			"request": {
+				"url": "http://localhost:8080/medico/del/5",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Recupera Medicos",
+			"request": {
+				"url": "http://localhost:8080/medico/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona Consulta",
+			"request": {
+				"url": "http://localhost:8080/consulta/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dia\":\"2018-12-19\",\n\t\"hora\":\"08:00:00\",\n\t\"medico_id\":\"1\",\n\t\"paciente_id\":\"2\",\n\t\"obs\":\"Consulta de rotina\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Altera Consulta",
+			"request": {
+				"url": "http://localhost:8080/consulta/altera/9",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"dia\":\"2018-12-08\",\n\t\"hora\":\"08:30:00\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Consulta",
+			"request": {
+				"url": "http://localhost:8080/consulta/del/9",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Recupera Consultas",
+			"request": {
+				"url": "http://localhost:8080/consulta/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Adiciona Receita",
+			"request": {
+				"url": "http://localhost:8080/receita/add",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"restricao\":\"sem restricoes\",\n\t\"remedio\":\"Lorotadina\",\n\t\"obs\":\"sem obs\",\n\t\"consulta_id\":\"2\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Altera Receita",
+			"request": {
+				"url": "http://localhost:8080/receita/altera/11",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"restricao\":\"Proibido para crianca\",\n\t\"remedio\":\"Lorotadina\"\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Deleta Receita",
+			"request": {
+				"url": "http://localhost:8080/receita/del/2",
+				"method": "DELETE",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "Recupera Receitas",
+			"request": {
+				"url": "http://localhost:8080/receita/all",
+				"method": "GET",
+				"header": [],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
